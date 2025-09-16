@@ -1,5 +1,5 @@
 
-# Gulcht's Dotfiles
+# Dotfiles
 
 just my tmux, neovim setup
 
