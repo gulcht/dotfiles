@@ -1,0 +1,36 @@
+# -----------------------------------
+# OS / Editor junk files
+# -----------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+# -----------------------------------
+# Neovim
+# -----------------------------------
+# Neovim plugin manager (packer, lazy, etc.)
+nvim/site
+nvim/plugged
+nvim/autoload
+nvim/.netrwhist
+nvim/undodir
+nvim/swap//
+nvim/backup//
+
+# LazyVim generated files
+nvim/lazy-lock.json
+
+# -----------------------------------
+# Tmux
+# -----------------------------------
+.tmux/resurrect/
+.tmux/resurrect/*
+.tmux/resurrect-save
+.tmux/plugins/
+
+# -----------------------------------
+# Logs
+# -----------------------------------
+*.log
