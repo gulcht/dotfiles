@@ -31,13 +31,16 @@ After installation, you can start:
   tmux
   nvim
 ```
+You can set the transparency at /nvim/lua/plugins/colorscheme.lua
 
 **✨ Enjoy your setup & Happy coding! ✨**
+
+<img width="1920" height="1080" alt="Screenshot 2568-09-17 at 01 22 18" src="https://github.com/user-attachments/assets/e70c038e-8eca-42a0-bec6-012dbe0335c4" />
+<img width="1920" height="1080" alt="Screenshot 2568-09-17 at 01 25 07" src="https://github.com/user-attachments/assets/577d0c85-a44f-4bba-902d-fd8644acd76b" />
+<img width="1920" height="1080" alt="Screenshot 2568-09-17 at 01 21 47" src="https://github.com/user-attachments/assets/1f42b9c2-31b2-4e14-8f57-23bc021c70ec" />
+
 ## Credits
 Inspired by [Sin-cy](https://github.com/Sin-cy/dotfiles)
 
-
 ## License
 Distributed under the [MIT License.](https://choosealicense.com/licenses/mit/)
-
-
