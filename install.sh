@@ -20,6 +20,7 @@ echo "📂 Step 4: Copying local configs to ~/.config..."
 mkdir -p ~/.config
 cp -r ./nvim ~/.config/
 cp -r ./tmux ~/.config/
+cp -r starship.toml ~/.config/
 
 echo "✅ Configs copied successfully!"
 
