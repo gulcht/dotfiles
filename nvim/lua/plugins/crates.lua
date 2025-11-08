@@ -1,18 +1,9 @@
 return {
-    {
-        'saecki/crates.nvim',
-        ft = { "toml" },
-        config = function()
-            require("crates").setup {
-                completion = {
-                    cmp = {
-                        enabled = false
-                    },
-                },
-            }
-            require('cmp').setup.buffer({
-                sources = { { name = "crates" } }
-            })
-        end
-    },
+  {
+    "saecki/crates.nvim",
+    tag = "stable",
+    config = function()
+      require("crates").setup()
+    end,
+  },
 }
