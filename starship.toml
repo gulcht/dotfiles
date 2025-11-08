@@ -1,31 +1,6 @@
 palette = "dracula"
 
-[aws]
-style = "bold orange"
-
-[cmd_duration]
-style = "bold yellow"
-
-[directory]
-style = "bold green"
-
-[git_branch]
-style = "bold pink"
-
-[git_status]
-style = "bold red"
-
-[hostname]
-style = "bold purple"
-
-[username]
-format = "[$user]($style) on "
-style_user = "bold cyan"
-
-[line_break]
-disabled = true
-
-# Define Dracula color palette
+# Dracula color palette
 [palettes.dracula]
 background = "#282a36"
 current_line = "#44475a"
@@ -38,3 +13,56 @@ pink = "#ff79c6"
 purple = "#bd93f9"
 red = "#ff5555"
 yellow = "#f1fa8c"
+
+# Modules you want to show
+[directory]
+style = "bold green"
+
+[git_branch]
+style = "bold pink"
+
+[git_status]
+style = "bold red"
+
+[username]
+format = "[$user]($style) on "
+style_user = "bold cyan"
+
+[line_break]
+disabled = true
+
+# Disable everything else
+[aws]
+disabled = true
+[cmd_duration]
+disabled = true
+[hostname]
+disabled = true
+[docker_context]
+disabled = true
+[nodejs]
+disabled = true
+[rust]
+disabled = true
+[package]
+disabled = true
+[python]
+disabled = true
+[deno]
+disabled = true
+[bun]
+disabled = true
+[php]
+disabled = true
+[java]
+disabled = true
+[golang]
+disabled = true
+[swift]
+disabled = true
+[conda]
+disabled = true
+[helm]
+disabled = true
+[kubernetes]
+disabled = true
