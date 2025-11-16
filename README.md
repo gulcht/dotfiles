@@ -31,8 +31,12 @@ After installation, you can start:
   tmux
   nvim
 ```
-You can set the transparency at /nvim/lua/plugins/colorscheme.lua
 
+Setup Gemini (Required curl)
+
+```bash
+  export GEMINI_API_KEY="<your API key here>"
+```
 **✨ Enjoy your setup & Happy coding! ✨**
 
 <img width="1920" height="1080" alt="Screenshot 2568-09-17 at 01 22 18" src="https://github.com/user-attachments/assets/e70c038e-8eca-42a0-bec6-012dbe0335c4" />
