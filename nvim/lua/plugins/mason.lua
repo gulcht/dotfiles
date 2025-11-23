@@ -12,6 +12,7 @@ return {
                 "shfmt",
                 "stylua",
                 "tailwindcss-language-server",
+                "eslint-lsp",
                 -- "typescript-language-server",
                 "vtsls",
                 "codelldb",
