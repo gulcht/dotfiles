@@ -1,0 +1,21 @@
+return {
+    {
+        "mason-org/mason.nvim",
+        opts = function(_, opts)
+            vim.list_extend(opts.ensure_installed, {
+                "css-lsp",
+                "emmet-ls",
+                "html-lsp",
+                "lua-language-server",
+                "prettier",
+                "rust-analyzer",
+                "shfmt",
+                "stylua",
+                "tailwindcss-language-server",
+                -- "typescript-language-server",
+                "vtsls",
+                "codelldb",
+            })
+        end,
+    },
+}

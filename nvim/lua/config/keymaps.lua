@@ -8,23 +8,23 @@ local map = vim.keymap.set
 -- =============================================================================
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
+map("n", "<Leader>a", "ggVG", { desc = "Select all" })
 
-map("n", "9", "0", { desc = "Go to start of line" })
-map("n", "0", "$", { desc = "Go to end of line" })
-
+map({ "n", "v" }, "9", "0", { desc = "Go to start of line" })
+map({ "n", "v" }, "0", "$", { desc = "Go to end of line" })
 -- =============================================================================
 -- Move Lines (Alt + j/k OR Alt + Arrow Keys)
 -- =============================================================================
 -- Move Down
 for _, key in ipairs({ "<A-j>", "<A-Down>" }) do
-    map("n", key, ":m .+1<CR>==", { silent = true, desc = "Move line down" })
-    map("v", key, ":m '>+1<CR>gv=gv", { silent = true, desc = "Move selection down" })
+  map("n", key, ":m .+1<CR>==", { silent = true, desc = "Move line down" })
+  map("v", key, ":m '>+1<CR>gv=gv", { silent = true, desc = "Move selection down" })
 end
 
 -- Move Up
 for _, key in ipairs({ "<A-k>", "<A-Up>" }) do
-    map("n", key, ":m .-2<CR>==", { silent = true, desc = "Move line up" })
-    map("v", key, ":m '<-2<CR>gv=gv", { silent = true, desc = "Move selection up" })
+  map("n", key, ":m .-2<CR>==", { silent = true, desc = "Move line up" })
+  map("v", key, ":m '<-2<CR>gv=gv", { silent = true, desc = "Move selection up" })
 end
 
 -- =============================================================================
@@ -37,10 +37,11 @@ map("n", "<Leader>fd", "<cmd>lua vim.lsp.buf.definition()<CR>", { desc = "Go to 
 -- =============================================================================
 pcall(vim.keymap.del, "n", "<C-/>")
 pcall(vim.keymap.del, "t", "<C-/>")
-
+pcall(vim.keymap.del, "n", "<C-_>")
+pcall(vim.keymap.del, "t", "<C-_>")
 -- Toggle Terminal with Ctrl+t
 map({ "n", "t" }, "<c-t>", function()
-    Snacks.terminal()
+  Snacks.terminal()
 end, { desc = "Toggle Terminal" })
 
 -- =============================================================================
@@ -61,7 +62,7 @@ map("n", "<Leader>de", "<cmd>lua require'dap'.terminate()<CR>", { desc = "Debugg
 map("n", "<Leader>dr", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Debugger run last" })
 
 map("n", "<Leader>dd", function()
-    require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))
+  require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))
 end, { desc = "Debugger set conditional breakpoint" })
 
 -- =============================================================================
@@ -73,6 +74,10 @@ map("n", "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "De
 -- Autocomplete
 -- =============================================================================
 map("i", "<C-Space>", function()
-    local ok, blink = pcall(require, "blink.cmp")
-    if ok then blink.show() else vim.notify("blink.cmp not loaded", vim.log.levels.WARN) end
+  local ok, blink = pcall(require, "blink.cmp")
+  if ok then
+    blink.show()
+  else
+    vim.notify("blink.cmp not loaded", vim.log.levels.WARN)
+  end
 end, { desc = "Trigger autocomplete manually" })

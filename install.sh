@@ -26,11 +26,11 @@ echo "✅ Configs copied successfully!"
 
 echo "🔄 Step 5: Reloading tmux config..."
 if command -v tmux >/dev/null 2>&1; then
-  tmux start-server
-  tmux source-file ~/.config/tmux/tmux.conf
-  echo "✅ Tmux config reloaded!"
+	tmux start-server
+	tmux source-file ~/.config/tmux/tmux.conf
+	echo "✅ Tmux config reloaded!"
 else
-  echo "⚠️  tmux not found in PATH, skipping reload."
+	echo "⚠️  tmux not found in PATH, skipping reload."
 fi
 
 echo "====================================="
