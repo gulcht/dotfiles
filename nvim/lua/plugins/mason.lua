@@ -2,6 +2,7 @@ return {
     {
         "mason-org/mason.nvim",
         opts = function(_, opts)
+            opts.ensure_installed = opts.ensure_installed or {}
             vim.list_extend(opts.ensure_installed, {
                 "css-lsp",
                 "emmet-ls",
@@ -16,6 +17,9 @@ return {
                 "vtsls",
                 "codelldb",
             })
+            if diagnostics == "bacon-ls" then
+              vim.list_extend(opts.ensure_installed, { "bacon" })
+            end
         end,
     },
 }
