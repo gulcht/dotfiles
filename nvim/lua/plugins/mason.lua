@@ -8,7 +8,6 @@ return {
                 "html-lsp",
                 "lua-language-server",
                 "prettier",
-                "rust-analyzer",
                 "shfmt",
                 "stylua",
                 "tailwindcss-language-server",
