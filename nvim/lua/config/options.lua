@@ -7,3 +7,8 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = false
+
+vim.cmd([[
+    set signcolumn=yes
+    autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
+]])

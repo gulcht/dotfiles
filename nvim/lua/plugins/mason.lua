@@ -17,9 +17,9 @@ return {
                 "vtsls",
                 "codelldb",
             })
-            if diagnostics == "bacon-ls" then
-              vim.list_extend(opts.ensure_installed, { "bacon" })
-            end
+            -- if diagnostics == "bacon-ls" then
+            --   vim.list_extend(opts.ensure_installed, { "bacon" })
+            -- end
         end,
     },
 }
