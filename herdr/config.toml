@@ -1,0 +1,37 @@
+onboarding = false
+
+[ui]
+sidebar_collapsed_mode = "hidden"  # default is "compact"
+hide_tab_bar_when_single_tab = true
+pane_gaps = false
+pane_outer_borders = false
+
+[ui.sound]
+enabled = true
+
+[ui.toast]
+delivery = "terminal"
+
+[theme]
+name = "one-dark"
+auto_switch = false
+
+[keys]
+# Move to window/pane with prefix + arrow
+focus_pane_left = "prefix+left"
+focus_pane_right = "prefix+right"
+focus_pane_up = "prefix+up"
+focus_pane_down = "prefix+down"
+
+# Split horizontal with prefix + h (instead of prefix + minus)
+split_horizontal = "prefix+h"
+
+# Switch tabs with shift + arrow
+previous_tab = "shift+left"
+next_tab = "shift+right"
+
+# Resize panel with ctrl + shift + arrow
+resize_pane_left = "ctrl+shift+left"
+resize_pane_right = "ctrl+shift+right"
+resize_pane_up = "ctrl+shift+up"
+resize_pane_down = "ctrl+shift+down"
